@@ -124,7 +124,7 @@ def finish_job(caller, raw_string, **kwargs):
 
     # Hardcoded city options
     cities = {
-        "Evannia": "A bustling capital of trade and politics.",
+        "Evannia": "A bustling capital of trade and politics.",  # only room ive created and correctly tagged
         "Darkhollow": "A mysterious mountain town with ancient secrets.",
         "Seawatch": "A coastal city known for storms and ships.",
         "Frostgarde": "A frozen fortress in the north.",
@@ -152,7 +152,7 @@ def store_city(caller, raw_string, **kwargs): ### This is where my troubles star
         caller.msg(f"[DEBUG] store_city() - city set to: {city}")
 
         text = "|wPlease enter your character's name:|n"
-        options = [{"key": "_default", "exec": handle_name_input}]
+        options = [{"key": "_default", "exec": handle_name_input}]   
 
         return text, options
 
